@@ -54,3 +54,15 @@ db
 \use schemaName
 db.getCollections()
 ```
+
+## Create a Collection
+```
+db.createCollection("students")
+```
+
+## Add a Document
+```
+db.students.add(
+    { name : 'jrKim' , age : 29 }
+)
+```
