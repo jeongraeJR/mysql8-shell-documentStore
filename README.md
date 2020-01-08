@@ -29,3 +29,28 @@ mysqlsh root@localhost:33060
 
 \sql
 ```
+
+## Concepts
+* Schema (=Database)
+* Collections (=Table)
+
+
+## Create Schema
+JavaScript 모드에서 스키마를 만드는 법은 아직 못찾았다 (추후 알아보기..)
+그래서 SQL 모드로 바꿔서 스키마를 만들어보았다.
+
+```
+\sql
+create database schemaName
+```
+
+## Get Collections
+* db: 기본 개체이며, 현재 스키마에서 지정된 글로벌 변수이다. 예를들어 컬렉션을 검색하기 위해서는 db 변수에 사용 가능한 메서드를 사용한다.
+* 스키마를 지정하기 위해서는 \use 명령어를 사용한다.
+* db.getCollections() : 스키마의 컬렉션 목록을 참조하여 가져온다.
+```
+\js
+db
+\use schemaName
+db.getCollections()
+```
