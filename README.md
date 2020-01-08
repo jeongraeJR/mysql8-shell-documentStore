@@ -20,14 +20,12 @@ mysqlsh root@localhost:33060
 
 ## Change Language Interface
 *MySQL shell 에는 X DevAPI가 내장되어있다 . X DevAPI는 다음과 같은 세가지 인터페이스를 제공한다.
+
 (Python, JavaScript, sql)
 ```
-/*JavaScript */
 \js
 
-/* Python */ 
 \py
 
-/* sql */
 \sql
 ```
